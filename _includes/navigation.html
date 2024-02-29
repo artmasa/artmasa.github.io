@@ -1,0 +1,11 @@
+<nav>
+  <a class="dl-logo" href="/" title="Home">
+    <span class="logo"></span>
+  </a>
+  <span class="links">
+    <a href="/about" {% if page.url == "/about" %}style="display:none"{% endif %}>About</a>
+    <button onclick="toggleTheme()" title="Switch theme">
+      <span class="theme-switcher"></span>
+    </button>
+  </span>
+</nav>

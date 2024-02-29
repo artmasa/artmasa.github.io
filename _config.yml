@@ -1,0 +1,29 @@
+# site properties
+title:          DarkLoop-Tech thoughts
+description:    "Sharing my thoughts on tech and other things."
+url:            https://artmasa.github.io
+baseurl:        /
+paginate:       5
+permalink:      pretty
+timezone:       America/Chicago
+highlighter:    none
+
+collections:
+  posts:
+    output:     true
+    permalink:  /post/:title
+
+# about
+author:
+  name:         Arturo Martinez
+  url:          https://x.com/artmasa
+
+# blog plugins
+gaId:           G-XVRC1GZGFD
+clarityId:      d4j90x8jud
+disqusId:       tech-thoughts
+
+# Gems
+plugins:
+  - jekyll-paginate
+  - jekyll-sitemap

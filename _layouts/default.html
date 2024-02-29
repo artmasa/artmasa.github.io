@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+  <head>
+    {% include common-head.html %}
+    {% include scripted-head.html %}
+  </head>
+  <body>
+    <div class="page">
+      {% include navigation.html %}
+      <div class="container">
+        {{ content }}
+      </div>
+      {% if page.url != "/about" %}
+        <hr/>
+        <footer>
+          <p>
+            {{ site.author.name }} - {{ site.time | date: "%Y" }}
+          </p>
+        </footer>
+      {% endif %}
+    </div>
+    <script src="/assets/js/global.js"></script>
+    <script>hljs.highlightAll();</script>
+  </body>
+</html>
