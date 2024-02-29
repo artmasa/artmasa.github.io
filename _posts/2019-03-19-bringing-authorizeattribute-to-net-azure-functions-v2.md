@@ -1,8 +1,10 @@
 ---
-layout: post
-title: Bringing AuthorizeAttribute to .NET Azure Functions v2
-comments: true
+guid:     ca4a2e4e-1826-4a05-8801-f67784dec8b7
 legacyid: /post.aspx?id=da4fe167-0972-4c0d-ba64-945662ad8e4d
+layout:   post
+title:    Bringing AuthorizeAttribute to .NET Azure Functions v2
+comments: true
+tags:     azure-functions authorize-attribute authorization policy-based-auth
 ---
 
 Azure Functions is a great technology, and even greater when we talk about the .NET support. It allows developer to focus on creating solutions to problems they have been assigned to solve, and not worrying about the infrastructure.
@@ -10,6 +12,8 @@ Azure Functions is a great technology, and even greater when we talk about the .
 [Update available for V3](functionauthorize-for-azure-functions-v3)
 
 A big change for Azure Functions V2 is that runs on top of ASP.NET Core 2 hosting model. Now, lets not get confused; Azure Functions is not ASP.NET Core WebAPI because we are not talking about just HTTP endpoints. Through Azure Functions we are able to trigger actions from different sources and this is what makes it a powerful tool. One of my favorites - [Durable Functions](https://docs.microsoft.com/en-us/azure/azure-functions/durable/durable-functions-overview) extension, we can execute asynchronous workflows without having to be concerned where we were going to hold state like in the days of WF.
+
+<!-- more -->
 
 Enough praising Azure Functions. Let's come back to the HTTP side of things. Azure functions HTTP trigger relies on its own Authorization Levels to handle function level access and some of them have not been implemented yet; so we rely heavily on configuring clients with keys in order to access the functions. We can also specify the `AuthorizationLevel.Anonymous` in our `HttpTriggerAttribute` and setup [Authentication/Authorization](https://docs.microsoft.com/en-us/azure/app-service/overview-authentication-authorization) at the App Service level which is an auth proxy layer for applications hosted in Azure. It works great with ASP.NET, but it does not work all the way to the app level with Azure Functions. Tokens are still passed to the application in the function's request headers, but we need to handle it. This is painful when some of that information is needed to authorize access to resources.
 

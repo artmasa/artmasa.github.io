@@ -2,18 +2,23 @@
 ---
 var discus_config;
 
-function loadDisqus(pageIdentifier, pageUrl) {
+function loadDisqus(id, pageUrl, legacyId) {
     
     var siteUrl = 'https://blog.darkloop.com';
+    var shortname = legacyId == '' ? '{{ site.disqusId }}' : '{{ site.disqusOldId}}';
 
     disqus_config = function () {
-        this.page.url = siteUrl + pageIdentifier;
-        //this.page.identifier = siteUrl + pageIdentifier;
+        if (legacyId == '') {
+            this.page.identifier = id;
+            this.page.url = siteUrl + pageUrl;
+        } else {
+            this.page.url = siteUrl + legacyId;
+        }
     };
 
     (function() {
         var d = document, s = d.createElement('script');
-        s.src = 'https://{{site.disqusId}}.disqus.com/embed.js';
+        s.src = `https://${shortname}.disqus.com/embed.js`;
         s.setAttribute('data-timestamp', +new Date());
         (d.head || d.body).appendChild(s);
     })();

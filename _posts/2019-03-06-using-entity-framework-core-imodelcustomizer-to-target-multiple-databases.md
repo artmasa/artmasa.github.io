@@ -1,12 +1,16 @@
 ---
-layout: post
-title: Using Entity Framework Core IModelCustomizer to target multiple data stores
+guid:     2b628828-a4ec-4aff-a9b0-cd1ac1dda54e
+title:    Using Entity Framework Core IModelCustomizer to target multiple data stores
+layout:   post
+tags:     entity-framework-core db-context model-customizer
 comments: true
 ---
 
 Some projects are designed to be optionally deployed against different back-end data stores. In these cases we want to configure our data model depending on the platform we are targeting, but keeping the models agnostic to the data store to simplify its use when developing our business logic.
 
 Lets say we work for the Smart Retail Solutions company, and have been tasked to create a retail sales software system for small businesses which may have different database technology preferences.
+
+<!-- more -->
 
 ### Typical DbContext Setup
 A typical `DbContext` setup would look as follows inside our **SRS.SmartRetail.Data** assembly.

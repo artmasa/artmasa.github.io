@@ -1,6 +1,8 @@
 ---
-layout: post
-title: Automating deployment of custom domains for Azure Front Door Standard/Premium (Preview) using ARM
+guid:     842a5979-2003-4c35-a498-08af42c6b300
+title:    Automating deployment of custom domains for Azure Front Door Standard/Premium (Preview) using ARM
+layout:   post
+tags:     arm-template front-door azure-front-door automation custom-domain
 comments: true
 ---
 
@@ -8,6 +10,7 @@ Azure Front Door for standard and premium tiers offers great flexibility for dep
 This new behavior gives us the ability to use a central Front Door instance and manage multiple independent endpoints that can be managed separately.
 
 As in many other, network and application services, Azure gives the option to configure custom domains. All you need is to proof domain's ownership and you are ready to go. And when you manage your public DNS zone in Azure you can automate the creation of verification records to automate provisioning the custom domain configuration for your services.
+<!-- more -->
 
 When it comes to Front Door (Preview) custom domains with ARM it's a little tricky. You would expect to be able to reference your custom domain resource and get the verification token to create your TXT record. The problem is that the custom domain deployment `"Microsoft.Cdn/profiles/customDomains"` does not return (even for references) until the domain has been validated and associated to an endpoint (`Microsoft.Cdn/profiles/afdEndpoints`). Having the following definition in your ARM template would block the template until the validation and association are complete:
 

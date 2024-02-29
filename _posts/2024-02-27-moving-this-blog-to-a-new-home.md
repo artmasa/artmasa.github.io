@@ -1,6 +1,8 @@
 ---
-layout: post
-title: Moving this Blog to a new home!
+guid:     67c6e171-fc6c-4f8f-a400-f1aa9cccd5e8
+title:    Moving this Blog to a new home!
+layout:   post
+tags:     github-pages markdown
 comments: true
 ---
 

@@ -1,12 +1,16 @@
 ---
-layout: post
-title: Using App Service Managed Identity with Azure Functions Service Bus/Event Hub Bindings
+guid:     91c79a18-95c6-45c7-addd-b618afd26b0a
 legacyid: /post.aspx?id=bafff9d4-7b14-423c-9f5b-a2ef34287730
+title:    Using App Service Managed Identity with Azure Functions Service Bus/Event Hub Bindings
+layout:   post
+tags:     azure-service-bus azure-functions managed-identity event-hub
 comments: true
 ---
 Nothing better than removing all secrets from source and configuration settings in our applications.
 Azure App Services have a feature called Managed Identity in which you can configure an application to run under the context of a Service Principal to access other resources the application has been granted access to.
 In the case of Azure Functions you can enable it by accessing the **Identity** link under the **Platform features** tab.
+
+<!-- more -->
 
 ![Functions Azure Platform features tab](/images/2019-09-17-01.png)
 

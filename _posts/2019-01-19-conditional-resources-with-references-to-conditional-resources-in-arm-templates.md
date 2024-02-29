@@ -1,11 +1,15 @@
 ---
-layout: post
-title: Conditional resources with references to conditional resources in ARM Templates Fail to Deploy
+guid:     f94a2f45-e5f5-4011-917c-c00cab757c04
+title:    Conditional resources with references to conditional resources in ARM Templates Fail to Deploy
+layout:   post
+tags:     azure arm-templates conditional resource failure
 comments: true
 ---
 
 In a recent project I needed to deploy a web certificate and host name bindings for a service app.<br/>
 Now, this requirement was only for the production environment. Using the `condition` property available for the ARM template resources I generated a template similar to the following:
+
+<!-- more -->
 
 ``` json
 {
