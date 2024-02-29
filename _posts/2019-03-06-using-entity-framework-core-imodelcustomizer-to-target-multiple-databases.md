@@ -41,6 +41,7 @@ Lets create new assemblies for each provider we want to target referencing our D
 - SRS.SmartRetail.Data.SqlServer
 - SRS.SmartRetail.Data.MySql
 - ...
+
 Now we are able to focus on targeting specific data store features and limitations:
 
 ```typescript
