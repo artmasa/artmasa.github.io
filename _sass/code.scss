@@ -11,6 +11,32 @@ code.hljs {
     font-weight: 350;
 }
 
+copy-code {
+    display: block;
+    position: relative;
+
+    .icon {
+        background-color: transparent;
+        border: 0;
+        border-radius: 3px;
+        z-index: 2;
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 24px;
+        margin: 5px;
+        padding: 3px;
+        
+        .copy-img {
+            width: 18px;
+            height: 18px;
+            display: inline-block;
+            background-image: url('/assets/img/copy.svg');
+            background-repeat: no-repeat;
+        }
+    }
+}
+
 .dark {
     code.hljs {
         background-color: rgb(60, 60, 60) !important;

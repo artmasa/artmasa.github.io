@@ -1,5 +1,5 @@
 $joly: joly-display, sans-serif;
-$eaves: "Segoe UI", sans-serif;
+$eaves: "Segoe UI", "Arial", sans-serif;
 $eavesn: mr-eaves-xl-modern-narrow, sans-serif;
 $mono: "Cascadia Code", "Fira Code", Consolas, "Courier New", monospace;
 
@@ -9,7 +9,6 @@ body {
     font-weight: 300;
 
     > .page {
-        //display: flex;
         flex-direction: column;
         flex-wrap: nowrap;
         height: 100%;
@@ -17,6 +16,10 @@ body {
         > .container {
             flex: 2;
         }
+    }
+
+    #disqus_thread iframe #document html body {
+        background-color: black !important;
     }
 }
 
@@ -40,6 +43,8 @@ body {
     .links {
         display: flex;
         flex-direction: row;
+        height: 26px;
+        max-height: 26px;
         gap: 15px;
 
         a {
@@ -83,6 +88,7 @@ nav {
         margin-left: 15px;
         margin-right: 15px;
         padding: 1px 10px 1px 15px;
+        border-radius: 2px 5px 5px 2px; 
     }
 }
 

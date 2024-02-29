@@ -12,7 +12,7 @@ permalink: /about
         <a href="https://github.com/artmasa" target="_blank"><span id="gh" title="GitHub"></span></a>
     </span>
 </div>
-### About this blog
+### About me
 
 I enjoy spending time with cloud technologies, seeing the impact it can have on all the way from big corporations to individuals likes me.
 I also enjoy work related to .NET technologies and love to see the evolution it's having these last years.

@@ -2,7 +2,7 @@
 guid:     842a5979-2003-4c35-a498-08af42c6b300
 title:    Automating deployment of custom domains for Azure Front Door Standard/Premium (Preview) using ARM
 layout:   post
-tags:     arm-template front-door azure-front-door automation custom-domain
+tags:     arm-template azure-front-door custom-domain
 comments: true
 ---
 
