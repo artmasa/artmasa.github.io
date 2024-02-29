@@ -1,29 +1,32 @@
 # site properties
-title:          DarkLoop-Tech thoughts
-description:    "Sharing my thoughts on tech and other things."
-url:            https://blog.darkloop.com
-baseurl:        /
-paginate:       5
-permalink:      pretty
-timezone:       America/Chicago
-highlighter:    none
-excerpt_separator: <!-- more -->
+title:              DarkLoop-Tech thoughts
+description:        "Sharing my thoughts on tech and other things."
+url:                https://blog.darkloop.com
+baseurl:            /
+paginate:           5
+permalink:          pretty
+timezone:           America/Chicago
+excerpt_separator:  <!-- more -->
+highlighter:        none
+kramdown:
+  syntax_highlighter_opts:
+    disable:        true
 
 collections:
   posts:
-    output:     true
-    permalink:  /post/:title
+    output:         true
+    permalink:      /post/:title
 
 # about
 author:
-  name:         Arturo Martinez
-  url:          https://x.com/artmasa
+  name:             Arturo Martinez
+  url:              https://x.com/artmasa
 
 # blog plugins
-gaId:           G-XVRC1GZGFD
-clarityId:      d4j90x8jud
-disqusId:       darkloopblog
-disqusOldId:    tech-thoughts
+gaId:               G-XVRC1GZGFD
+clarityId:          d4j90x8jud
+disqusId:           darkloopblog
+disqusOldId:        tech-thoughts
 
 
 # Gems
