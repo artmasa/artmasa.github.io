@@ -1,7 +1,7 @@
 # site properties
 title:          DarkLoop-Tech thoughts
 description:    "Sharing my thoughts on tech and other things."
-url:            https://artmasa.github.io
+url:            https://blog.darkloop.com
 baseurl:        /
 paginate:       5
 permalink:      pretty

@@ -11,7 +11,7 @@ Now, this requirement was only for the production environment. Using the `condit
 
 <!-- more -->
 
-``` json
+```json
 {
     "variables": {
         "is-production": "[equals(parameters('environment'), 'Production')]"

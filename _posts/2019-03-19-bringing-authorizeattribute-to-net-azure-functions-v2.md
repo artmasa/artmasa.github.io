@@ -45,7 +45,7 @@ dotnet add package DarkLoop.Azure.WebJobs.Authorize --version 1.0.25-preview
 ### Lets setup authentication and authorization
 Just as in ASP.NET Core we need to setup the authentication and authorization targeting specifics in our app, but instead of registering using  IServiceCollection, we will use IWebJobsBuilder in our startup class.
 
-```csharp
+```typescript
 using Microsoft.Azure.WebJobs.Hosting;
 using MyFunctionAppNamespace;
  
@@ -86,7 +86,7 @@ These are the same methods we would call for ASP.NET Core when configuring authe
 ### Using WebJobAuthorizeAttribute
 `WebJobAuthorizeAttribute` implements `IAuthorizeData` as `AuthorizeAttribute` does, constructor and properties are the same, attribute targets are the same (Class and Method). Using it is just as using Authorize in your ASP.NET application. Using `WebJobAuthorize` will also replace the User property on the current `HttpContext` with the generated `ClaimsPrincipal` in case you need it in your function logic
 
-```csharp
+```typescript
 public class Functions
 {
   [WebJobAuthorize]
@@ -113,7 +113,7 @@ public class Functions
 ```
 We can also use it at the class level and it will apply to all functions in the class. Important to note that `IFunctionInvocationFilter` applied at the class level will affect all functions even if they are not HTTP functions. Internally the filter ignores non HTTP functions and exists without evaluating Authentication and Authorization.
 
-```csharp
+```typescript
 [WebJobAuthorize]
 public class Functions
 {

@@ -17,7 +17,7 @@ Since some names within Azure Functions SDK are moving from `WebJobs...` to `Fun
 
 The way you setup your environment is accomplished the same way as v2, but now we target `FunctionsStartup` to add the authentication services and configuration:
 
-```csharp
+```typescript
 using Microsoft.Azure.Functions.Extensions.DependencyInjection;
 using MyFunctionAppNamespace;
 
@@ -59,7 +59,7 @@ namespace MyFunctionAppNamespace
 ```
 And now it's just about adding our FunctionAuthorizeAttribute to our function classes or methods to protect our functions with our favorite IdP!
 
-```csharp
+```typescript
 public class Functions
 {
   [FunctionAuthorize]
@@ -75,7 +75,7 @@ public class Functions
 
   [FunctionAuthorize(Policy = "OnlyAdmins")]
   [FunctionName("get-all-records")]
-  public async Task<IActionResult>(
+  public async Task<IActionResult> GetAllRecords(
     [HttpTrigger(AuthorizationLevel.Anonymous, "get")] HttpRequest req,
     ILogger log)
   {

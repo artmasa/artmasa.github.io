@@ -14,7 +14,7 @@ Lets say we work for the Smart Retail Solutions company, and have been tasked to
 
 ### Typical DbContext Setup
 A typical `DbContext` setup would look as follows inside our **SRS.SmartRetail.Data** assembly.
-```csharp
+```typescript
 public class SmartRetailDbContext : DbContext
 {
   public SmartRetailDbContext(DbContextOptions options) : base(options) { }
@@ -43,7 +43,7 @@ Lets create new assemblies for each provider we want to target referencing our D
 - ...
 Now we are able to focus on targeting specific data store features and limitations:
 
-```csharp
+```typescript
 using Microsoft.EntityFrameworkCore.Relational;
 
 namespace SRS.SmartRetail.Data.SqlServer
@@ -64,7 +64,7 @@ Instead of bringing these configuration through `ModelBuilder.ApplyConfiguration
 `IModelCustomizer` provides the Customize method that passes a `ModelBuilder` and an instance of our `DbContext`. We can now bring our model configuration and apply it to the customizer.<br/>
 By the way, Entity Framework already has `IModelCustomizer` implementations. In the case of relational databases they have created the `RelationalModelCustomizer` living in the `Microsoft.EntityFrameworkCore.Relational` assembly; so we will start at this point for our example.
 
-```csharp
+```typescript
 namespace SRS.SmartRetail.Data.SqlServer
 {
   public class SmartRetailSqlServerModelCustomizer : RelationalModelCustomizer
@@ -91,7 +91,7 @@ Now, all this configuration lives in a completely different assembly from our `D
 ### Bringing DbContext and Configuration Together
 Entity Framework Core provides the `AddDbContext<TContext>(Action<DbContextOptionsBuilder>, ...)` extension method to add our `DbContext` to the application's service collection. Here we will configure our model customizer.
 
-```csharp
+```typescript
 public void ConfigureServices(IServiceCollection services)
 {
   //... some services configured here
@@ -111,7 +111,7 @@ When we call `UseSqlServer`, Entity Framework configures the default `IModelCust
 
 We can go one step further and provide an extension method in our provider specific assembly to configure our context and model.
 
-```csharp
+```typescript
 namespace Microsoft.Extensions.DependencyInjection
 {
   public static class SmartRetailServiceCollectionExtensions
@@ -129,7 +129,7 @@ namespace Microsoft.Extensions.DependencyInjection
 ```
 And we now use it in our startup.cs
 
-```csharp
+```typescript
 public class Startup
 {
   public void ConfigureServices(IServiceCollection services)

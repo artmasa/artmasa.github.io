@@ -21,7 +21,7 @@ Enable Managed Identity by turning On the **Status** control
 Now that this is enabled it's just a matter of configuring our function app backend to make it work.<br/>
 A typical setup for a function app would look like this:
 
-```csharp
+```typescript
 public class Functions
 {
     [FunctionName("MyFunction")]
