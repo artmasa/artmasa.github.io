@@ -17,6 +17,8 @@ I the last years I've spent considerable time creating web content for work usin
 Because I'm a beginner and wanted to get content migrated as soon as possible, I decided to use pre-built templates to get the site going.
 THIS WAS A MISTAKE!
 
+<!-- more -->
+
 Not only I wasted time trying to tweak things, but I was not really understanding the tools **jekyll** provides to make things work. So I decided to start from scratch. I went first to jekyll's [website](https://jekyllrb.com) and follow all the steps in the tutorial to get my environment ready. Everything just worked!
 
 Now that I had my environment it was really easy to put my web knowledge to work and I was able to create my site using my own designed templates, my own css and assets to make it look the way I wanted. I would recommend the same to others that want to learn the technology used to run your space.
