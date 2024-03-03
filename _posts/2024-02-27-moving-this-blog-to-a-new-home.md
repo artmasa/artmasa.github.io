@@ -10,7 +10,7 @@ For some time I've been wanting to move my blog to GitHub Pages to have access t
 I've been hosting it using BlogEngine and it's been a really good experience, but I think I'm going to love the built-in Markdown support.
 This is my first try!
 
-For years I have hosted my blog in an Azure Web App. Being a .NET developer I've alwas wanted to stay in that lane and App Services have always attracted me for anything personal. I didn't create the solution my self; as I said above, I've been hosting it using BlogEngine which has a really nice editor for everything I needed.
+For years I have hosted my blog in an Azure Web App. Being a .NET developer, I've alwas wanted to stay in that lane and App Services have always attracted me for anything personal. I didn't create the solution my self; as I said above, I've been hosting it using BlogEngine which has a really nice editor for everything I needed.
 
 I the last years I've spent considerable time creating web content for work using Markdown and really enjoy the simplicity of editing, publishing and have access to really low HTML level constructs when required. So, I decided to take on GitHub pages and I'm so happy I've made the decision.
 
