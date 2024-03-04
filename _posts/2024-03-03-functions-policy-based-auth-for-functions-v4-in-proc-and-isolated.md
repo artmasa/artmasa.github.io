@@ -12,6 +12,8 @@ Since then, Microsoft has introduced another way of hosting Azure Function appli
 
 More recently ASP.NET Core integration has been added to the Isolated worker hosting model. It was time to bring the `AuthorizeAttribue` behavior to Isolated worker Function apps.
 
+<!-- more -->
+
 I've been working on refactoring the solution to provide common shared functionality for both In-Proc and Isolated models.
 
 - [`DarkLoop.Azure.Functions.Authorize`](https://nuget.org/packages/DarkLoop.Azure.Functions.Authorize) will remain as the package used for In-Proc model hosted applications.
