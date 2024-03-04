@@ -29,7 +29,7 @@ dotnet add package DarkLoop.Azure.Functions.Authorization.Isolated
 ```
 
 ### Instrument your application for authorization
-```csharp
+```typescript
 // Instrument your application for authorization
 var host = new HostBuilder()
     .ConfigureFunctionsWebAppliction(builder =>
@@ -67,7 +67,7 @@ The authentication and authorization services are added in the same way as befor
 ### Securing Your HTTP Triggers
 Just as with In-Proc, securing your triggers involves decorating them with the authorization attribute.
 
-```csharp
+```typescript
 [FunctionAuthorize]
 public class Functions
 {
