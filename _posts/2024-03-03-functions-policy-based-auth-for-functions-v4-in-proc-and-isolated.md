@@ -103,8 +103,8 @@ Working on different ideas to empower consumers to implement more specific scena
 - #### Extensibility
   I'm working on allowing the definition of authorzation for functions without relying solely attributes. This will envolve exposing interfaces for greater flexibility.
 
-- #### Code generators
-  Generating code based on how classes and functions are decorated and remove need for reflection to consume the authorization metadata. Having code generators will optimize function startup time by avoiding runtime reflection operations.
+- #### Source generators
+  Generating code based on how classes and functions are decorated and remove need for reflection to consume the authorization metadata. Having source generators will optimize function startup time by avoiding runtime reflection operations.
   > It's important to note that the module currently performs JIT metadata generation only the first time a function is invoked.
 
 Feel free to share your thoughts in the comments, and don't hesitate to open any issues in the project's [repository](https://github.com/dark-loop/functions-authorize). Your feedback is valuable!
