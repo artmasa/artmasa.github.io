@@ -1,6 +1,6 @@
 ---
 guid:     4b05019d-a555-470a-ad08-8d0bfd8350dd
-title:    Azure Functions policy based authorization for Isolated mode
+title:    Azure Functions policy based authorization in Isolated mode
 layout:   post
 tags:     azure-functions functions-authorization policy-based-authorization authorize-attribute isolated-functions inproc-functions
 comments: true
