@@ -74,6 +74,57 @@ nav, .container, footer {
 
 nav {
     font-weight: 200;
+    font-family: $eavesn;
+    font-size: 1em;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+
+    a, button {
+        border: 0;
+        background-color: transparent;
+        border-radius: 5px;
+        display: inline-flex;
+        text-decoration: none;
+        padding: 5px 7px !important;
+        text-align: left;
+    }
+
+    .links {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        height: fit-content;
+        align-items: center;
+        gap: 5px;
+        height: 30px;
+    }
+
+    .dl-logo {
+        margin-left: 0;
+        padding: 0 !important;
+        padding-top: 10px !important;
+
+        &:hover {
+            background-color: transparent;
+        }
+
+        .logo 
+        {
+            background-repeat: no-repeat;
+            background-size: contain;
+            width: 150px;
+            height: 53px;
+        }
+    }
+
+    .theme-switcher {
+        width: 1.2em;
+        height: 1.2em;
+        background-repeat: no-repeat;
+    }
 }
 
 .container {
@@ -279,58 +330,6 @@ button {
     }
 }
 
-nav {
-    font-family: $eavesn;
-    font-size: 1em;
-    margin-bottom: 50px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-
-    a, button {
-        border: 0;
-        background-color: transparent;
-        border-radius: 5px;
-        display: inline-flex;
-        text-decoration: none;
-        padding: 5px 7px !important;
-        text-align: left;
-    }
-
-    .links {
-        position: relative;
-        display: flex;
-        flex-direction: row;
-        height: fit-content;
-        gap: 5px;
-    }
-
-    .dl-logo {
-        margin-left: 0;
-        padding: 0 !important;
-        padding-top: 10px !important;
-
-        &:hover {
-            background-color: transparent;
-        }
-
-        .logo 
-        {
-            background-repeat: no-repeat;
-            background-size: contain;
-            width: 150px;
-            height: 53px;
-        }
-    }
-
-    .theme-switcher {
-        width: 1.2em;
-        height: 1.2em;
-        background-repeat: no-repeat;
-    }
-}
-
 .posts {
     display: flex;
     flex-direction: column;
@@ -340,6 +339,16 @@ nav {
         .post-title a{
             text-decoration: none;
 
+        }
+
+        .continue {
+            font-family: $joly;
+            font-weight: 300;
+            font-size: .9em;
+            font-style: italic;
+            display: flex;
+            flex-direction: row;
+            justify-content: right;
         }
     }
 }
