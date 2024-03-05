@@ -108,7 +108,7 @@ nav {
         padding-top: 10px !important;
 
         &:hover {
-            background-color: transparent;
+            background-color: transparent !important;
         }
 
         .logo 
@@ -198,7 +198,7 @@ button {
     color: white;
 
     a {
-        color: #1182fa;
+        color: #4d91da;
         text-decoration: none;
     }
 
@@ -349,6 +349,11 @@ button {
             display: flex;
             flex-direction: row;
             justify-content: right;
+            padding: 3px;
+
+            a {
+                padding: 4px;
+            }
         }
     }
 }
