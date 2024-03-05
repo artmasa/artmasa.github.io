@@ -1,6 +1,6 @@
-$joly: joly-display, sans-serif;
-$eaves: "Segoe UI", "Arial", sans-serif;
-$eavesn: mr-eaves-xl-modern-narrow, serif;
+$joly: "joly-display", sans-serif;
+$eaves: "ff-tisa-sans-web-pro", "Segoe UI", "Arial", sans-serif;
+$eavesn: "mr-eaves-xl-modern-narrow", serif;
 $mono: "Cascadia Code", "Fira Code", "Menlo", Consolas, "Courier New", monospace;
 
 body {
@@ -196,6 +196,7 @@ button {
     
     background-color: $color;
     color: white;
+    font-weight: 250;
 
     a {
         color: #4d91da;
