@@ -17,7 +17,7 @@ More recently ASP.NET Core integration has been added to the Isolated worker hos
 I've been working on refactoring the solution to provide common shared functionality for both In-Proc and Isolated models.
 
 - [`DarkLoop.Azure.Functions.Authorize`](https://nuget.org/packages/DarkLoop.Azure.Functions.Authorize) will remain as the package used for In-Proc model hosted applications.
-- [`DarkLoop.Azure.Functions.Authorization.Isolated`](https://nuget.org/packages/DarkLoop.Azure.Functions.Authorzation.Isolated) will become the package for Isolated model hosted applications.
+- [`DarkLoop.Azure.Functions.Authorization.Isolated`](https://nuget.org/packages/DarkLoop.Azure.Functions.Authorization.Isolated) will become the package for Isolated model hosted applications.
 
 One significant improvement when transitioning from In-Proc to Isolated model is the support for a true middleware framework. Previously, `DarkLoop.Azure.Functions.Authorize` relied on invocation filters, which remained in preview. To notify the function consumer of an authorization failure, the function had to throw an exception, preventing the stack from reaching the function logic. The new module for the Isolated model leverages middleware, behaving as expected. The application will not log exceptions, but users will receive communication about authorization failures.
 

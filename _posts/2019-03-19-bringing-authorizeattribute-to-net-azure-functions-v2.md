@@ -4,7 +4,7 @@ legacyid: /post.aspx?id=da4fe167-0972-4c0d-ba64-945662ad8e4d
 layout:   post
 title:    Bringing AuthorizeAttribute to .NET Azure Functions v2
 comments: true
-tags:     azure-functions authorize-attribute authorization policy-based-auth
+tags:     azure-functions authorize-attribute authorization policy-based-authorization
 ---
 
 Azure Functions is a great technology, and even greater when we talk about the .NET support. It allows developer to focus on creating solutions to problems they have been assigned to solve, and not worrying about the infrastructure.

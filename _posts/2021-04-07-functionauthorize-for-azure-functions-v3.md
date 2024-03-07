@@ -3,7 +3,7 @@ guid:     0306e8f9-fb7f-4ab1-b6a0-af84c76b7589
 legacyid: /post.aspx?id=33e8e19e-d6a9-4aad-88c8-b27eebb73d4f
 title:    FunctionAuthorize for Azure Functions v3
 layout:   post
-tags:     azure-functions authorization authorize-attribute policy-based-auth
+tags:     azure-functions authorization authorize-attribute policy-based-authorization
 comments: true
 ---
 

@@ -255,6 +255,11 @@ button {
         }
 
         .links a:hover { background-color: transparent}
+
+    }
+    
+    .post-tag a {
+        color: white !important;
     }
 }
 
@@ -329,6 +334,10 @@ button {
 
         .links a:hover { background-color: transparent}
     }
+
+    .post-tag a {
+        color: black !important;
+    }
 }
 
 .posts {
@@ -372,6 +381,10 @@ button {
     border-radius: 3px;
     background-color: rgba(120, 169, 237, 0.379);
     padding: 2px 5px;
+    
+    a:hover {
+        background-color: transparent
+    }
 }
 
 .pagination {
@@ -380,6 +393,21 @@ button {
     span {
         color: #888888;
         cursor: default;
+    }
+}
+
+.tag-posts {
+    list-style-type: none;
+
+    li {
+        margin-bottom: 15px;
+
+        .pub-date {
+            font-family: $eavesn;
+            font-size: .75em;
+            font-weight: 300;
+            padding-left: 15px;
+        }
     }
 }
 

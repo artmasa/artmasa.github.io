@@ -16,6 +16,9 @@ collections:
   posts:
     output:         true
     permalink:      /post/:title
+  tags:
+    output:         true
+    permalink:      /tag/:name
 
 # about
 author:
