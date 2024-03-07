@@ -1,7 +1,4 @@
-$joly: "joly-display", sans-serif;
-$eaves: "ff-tisa-sans-web-pro", "Segoe UI", "Arial", sans-serif;
-$eavesn: "mr-eaves-xl-modern-narrow", serif;
-$mono: "Cascadia Code", "Fira Code", "Menlo", Consolas, "Courier New", monospace;
+@import "common";
 
 body {
     font-family: $eaves;
@@ -16,10 +13,6 @@ body {
         > .container {
             flex: 2;
         }
-    }
-
-    #disqus_thread iframe #document html body {
-        background-color: black !important;
     }
 }
 
@@ -135,9 +128,10 @@ nav {
     }
 
     blockquote{
-        border-left: 10px solid #888888;
-        margin-left: 15px;
-        margin-right: 15px;
+        background-color: $faded-blue;
+        border-left: 10px solid $mid-gray;
+        margin-left: 0;
+        margin-right: 0;
         padding: 1px 10px 1px 15px;
         border-radius: 2px 5px 5px 2px; 
     }
@@ -199,7 +193,7 @@ button {
     font-weight: 250;
 
     a {
-        color: #4d91da;
+        color: $anchor-color-dark;
         text-decoration: none;
     }
 
@@ -236,8 +230,8 @@ button {
         background-color: rgb(50, 50, 50);
         color: #ffb339;
     }
-
-    blockquote, #my-badge {
+    
+    #my-badge {
         background-color: rgb(50, 50, 50);
     }
 
@@ -257,7 +251,7 @@ button {
         .links a:hover { background-color: transparent}
 
     }
-    
+
     .post-tag a {
         color: white !important;
     }
@@ -271,7 +265,7 @@ button {
     font-weight: 350;
 
     a {
-        color: #005bbc;
+        color: $anchor-color-light;
         text-decoration: none;
     }
 
@@ -309,7 +303,7 @@ button {
         color: #822700;
     }
 
-    blockquote, #my-badge {
+    #my-badge {
         background-color: rgb(220, 220, 220);
     }
 
@@ -379,7 +373,7 @@ button {
     font-family: $eavesn;
     font-size: 1em;
     border-radius: 3px;
-    background-color: rgba(120, 169, 237, 0.379);
+    background-color: $faded-blue;
     padding: 2px 5px;
     
     a:hover {
@@ -391,7 +385,7 @@ button {
     margin-top: 20px;
 
     span {
-        color: #888888;
+        color: $mid-gray;
         cursor: default;
     }
 }

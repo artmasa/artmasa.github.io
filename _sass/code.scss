@@ -1,3 +1,5 @@
+@import "common";
+
 pre code.hljs {
     display: block;
     overflow-x: auto;
@@ -37,7 +39,15 @@ copy-code {
     }
 }
 
+a:hover:has(> code) {
+    background-color: transparent !important;
+}
+
 .dark {
+    a > code {
+        color: $anchor-color-dark;
+    }
+
     code.hljs {
         background-color: rgb(60, 60, 60) !important;
         color: unset;
@@ -97,6 +107,10 @@ copy-code {
 }
 
 .light {
+    a > code {
+        color: $anchor-color-light;
+    }
+
     code.hljs {
         background-color: rgb(231, 231, 231) !important;
         color: #333333;

@@ -90,7 +90,7 @@ public class Functions
   }
 }
 ```
-Notice how the second function, `get-all-records`, is using ASP.NET Core's `AuthorizationAttribute`. Now that we don't rely on invocation filters, we can use either `FunctionAuthorizeAttribute` or `AuthorizeAttribute`. The former attribute, which was introduced for this framework, has been kept to make it easy to migrate applications running on the In-Proc to the Isolated mode. Notably, `FunctionAuthorizeAttribute` in the Isolated module is simply an inheriting class of `AuthorizeAttribute`.
+Notice how the second function, `get-all-records`, is using ASP.NET Core's `AuthorizeAttribute`. Now that we don't rely on invocation filters, we can use either `FunctionAuthorizeAttribute` or `AuthorizeAttribute`. The former attribute, which was introduced for this framework, has been kept to make it easy to migrate applications running on the In-Proc to the Isolated mode. Notably, `FunctionAuthorizeAttribute` in the Isolated module is simply an inheriting class of `AuthorizeAttribute`.
 
 Additionally, is nice that for the Isolated model, the default authentication level is `Anonymous`; making it really simple to just declare the trigger attribute along with the authorization one.
 
