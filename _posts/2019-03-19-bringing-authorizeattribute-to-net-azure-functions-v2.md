@@ -9,7 +9,7 @@ tags:     azure-functions authorize-attribute authorization policy-based-authori
 
 Azure Functions is a great technology, and even greater when we talk about the .NET support. It allows developer to focus on creating solutions to problems they have been assigned to solve, and not worrying about the infrastructure.
 
-[Update available for V3](functionauthorize-for-azure-functions-v3)
+[Update available for V3+ In-process]({% post_url 2021-04-07-functionauthorize-for-azure-functions-v3 %}) and now also for [V4 Isolated]({% post_url 2024-03-03-functions-policy-based-auth-for-functions-v4-in-proc-and-isolated %})
 
 A big change for Azure Functions V2 is that runs on top of ASP.NET Core 2 hosting model. Now, lets not get confused; Azure Functions is not ASP.NET Core WebAPI because we are not talking about just HTTP endpoints. Through Azure Functions we are able to trigger actions from different sources and this is what makes it a powerful tool. One of my favorites - [Durable Functions](https://docs.microsoft.com/en-us/azure/azure-functions/durable/durable-functions-overview) extension, we can execute asynchronous workflows without having to be concerned where we were going to hold state like in the days of WF.
 

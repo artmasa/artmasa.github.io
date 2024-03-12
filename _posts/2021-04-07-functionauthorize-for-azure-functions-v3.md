@@ -11,6 +11,8 @@ In a prior post I discussed [Bringing the AuthorizeAttribute behavior to Azure F
 
 Microsoft has not yet made the Functions Filter feature GA and is still considered a preview feature. So the new package is made available as a pre-release package.
 
+> This framework is now also available for [V4 Isolated]({% post_url 2024-03-03-functions-policy-based-auth-for-functions-v4-in-proc-and-isolated %})
+
 Since some names within Azure Functions SDK are moving from `WebJobs...` to `Functions...`; this package also moves the attribute from `WebJobAuthorizeAttribute` to `FunctionAuthorizeAttribute`.
 
 <!-- more -->
