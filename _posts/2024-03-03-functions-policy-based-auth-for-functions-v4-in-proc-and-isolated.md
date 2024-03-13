@@ -40,7 +40,8 @@ var host = new HostBuilder()
     {
         // Add authorization services
         services
-            .AddFunctionsAuthorization()
+            .AddFunctionsAuthentication(JwtBearerDefaults.DefaultAuthenticationScheme) 
+            // or just ASP.NET Core's .AddAuthentication(... 
             .AddJwtBearer(options =>
             {
                 options.Authority = "https://login.microsoftonline.com/your-tenant-id";
