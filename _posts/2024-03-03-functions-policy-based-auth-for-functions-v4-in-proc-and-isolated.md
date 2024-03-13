@@ -40,7 +40,7 @@ var host = new HostBuilder()
     {
         // Add authorization services
         services
-            .AddFunctionsAuthentication(JwtBearerDefaults.DefaultAuthenticationScheme) 
+            .AddFunctionsAuthentication(JwtBearerDefaults.AuthenticationScheme) 
             // or just ASP.NET Core's .AddAuthentication(... 
             .AddJwtBearer(options =>
             {
