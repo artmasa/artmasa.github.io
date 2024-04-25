@@ -92,7 +92,7 @@ Also important to remember to specify authLevel paramater for `HttpTriggerAttrib
 
 ### Installing the Nuget package: 
 ```dos
-dotnet add package DarkLoop.Azure.Functions.Authorize
+dotnet add package DarkLoop.Azure.Functions.Authorization.InProcess
 ```
 
-> UPDATE: I don't know for how long the filters feature will be in preview. Azure Functions has been moved to newer versions since introducing this feature. I went ahead and make the package a release version: [DarkLoop.Azure.Functions.Authorize](https://www.nuget.org/packages/DarkLoop.Azure.Functions.Authorize)
+> UPDATE: I don't know for how long the filters feature will be in preview. Azure Functions has been moved to newer versions since introducing this feature. I went ahead and make the package a release version: [DarkLoop.Azure.Functions.Authorization.InProcess](https://www.nuget.org/packages/DarkLoop.Azure.Functions.Authorization.InProcess)

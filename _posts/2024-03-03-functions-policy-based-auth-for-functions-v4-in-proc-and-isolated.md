@@ -6,7 +6,7 @@ tags:     azure-functions functions-authorization policy-based-authorization aut
 comments: true
 ---
 
-It's amazing to see that the [DarkLoop.Azure.Functions.Authorize](https://nuget.org/packages/DarkLoop.Azure.Functions.Authorize) NuGet package has received over 160K downloads in almost three years since its publication.
+It's amazing to see that the [DarkLoop.Azure.Functions.Authorize](https://nuget.org/packages/DarkLoop.Azure.Functions.Authorize) (now DarkLoop.Azure.Functions.Authorization.InProcess) NuGet package has received over 160K downloads in almost three years since its publication.
 
 Since then, Microsoft has introduced another way of hosting Azure Function applications: the Isolated worker model. This mode was launched with a new set of APIs, moving away from the well-known `HttpRequest` and `HttpRequestMessage` bindings that HTTP-triggered functions have in the In-Proc hosting model. Unfortunately, this change prevented my package from utilizing the ASP.NET Core Authorization infrastructure for handling authorization in Azure Functions.
 
@@ -16,7 +16,7 @@ More recently ASP.NET Core integration has been added to the Isolated worker hos
 
 I've been working on refactoring the solution to provide common shared functionality for both In-Proc and Isolated models.
 
-- [`DarkLoop.Azure.Functions.Authorize`](https://nuget.org/packages/DarkLoop.Azure.Functions.Authorize) will remain as the package used for In-Proc model hosted applications.
+- [`DarkLoop.Azure.Functions.Authorization.InProcess`](https://nuget.org/packages/DarkLoop.Azure.Functions.Authorization.InProcess) will remain as the package used for In-Proc model hosted applications.
 - [`DarkLoop.Azure.Functions.Authorization.Isolated`](https://nuget.org/packages/DarkLoop.Azure.Functions.Authorization.Isolated) will become the package for Isolated model hosted applications.
 
 One significant improvement when transitioning from In-Proc to Isolated model is the support for a true middleware framework. Previously, `DarkLoop.Azure.Functions.Authorize` relied on invocation filters, which remained in preview. To notify the function consumer of an authorization failure, the function had to throw an exception, preventing the stack from reaching the function logic. The new module for the Isolated model leverages middleware, behaving as expected. The application will not log exceptions, but users will receive communication about authorization failures.
