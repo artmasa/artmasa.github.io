@@ -42,7 +42,7 @@ var host = new HostBuilder()
         services
             .AddFunctionsAuthentication(JwtBearerDefaults.AuthenticationScheme) 
             // or just ASP.NET Core's .AddAuthentication(... 
-            .AddJwtBearer(options =>
+            .AddJwtFunctionsBearer(options =>
             {
                 options.Authority = "https://login.microsoftonline.com/your-tenant-id";
                 options.Audience = "your-client-id";
