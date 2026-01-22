@@ -17,10 +17,10 @@ layout: default
 
 {% if page.comments %}
 <hr/>
+<noscript>
+  <p>Comments are provided by Disqus. Please enable JavaScript and disable any ad blockers/privacy extensions that might block disqus.com to view them.</p>
+</noscript>
 <div id="disqus_thread">
-  <noscript>
-    <p>Comments are provided by Disqus. Please enable JavaScript and disable any ad blockers/privacy extensions that might block disqus.com to view them.</p>
-  </noscript>
 </div>
 <script src="/assets/js/disqus.js"></script>
 <script>loadDisqus("{{ page.guid }}", "{{ page.url }}", "{{page.legacyid}}")</script>
